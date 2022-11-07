@@ -2,7 +2,7 @@ import styles from "../../styles/Home.module.css";
 import { useEffect, useRef, useState } from "react";
 import { projects } from "../Helpers/projects";
 
-const Card = () => {
+const Card = ({url}) => {
   const [bounds, setBounds] = useState({});
   const [transform, setTransform] = useState("");
   const [backradial, setBackRadial] = useState(
@@ -52,7 +52,7 @@ rotate3d(
       style={{
         transform: transform,
 
-        backgroundImage: `url(${projects[0].url})`,
+        backgroundImage: `url(${url})`,
       }}
       onMouseLeave={() => {
         setTransform("");

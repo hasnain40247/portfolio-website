@@ -1,7 +1,7 @@
 import styles from "../../styles/Home.module.css";
 
 
-const Tag = ({ skill, backcolor, color = "#393E46" }) => {
+const Tag = ({ skill, backcolor, color  }) => {
   console.log(backcolor);
   return (
     <span
