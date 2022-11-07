@@ -12,7 +12,7 @@
 
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(black 30%, #4d77ff,  #EEEEEE);
+  background-image: linear-gradient(black 30%, #4d77ff, #eeeeee);
 }
 
 .introduction h1 {
@@ -29,7 +29,33 @@
 
 .secondsection {
   height: 100vh;
-  width: 100%;
-background-color:  #EEEEEE
+  box-sizing: border-box;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  filter: drop-shadow(0px 10px 6px rgb(57, 62, 70,0.6));
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5% 15%;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.gitlink {
+  color: #222831;
+  text-decoration: none;
+}
+
+.gitlink:hover {
+  color: #ffd369;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  background: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  backdrop-filter: saturate(180%) blur(10px);
 }

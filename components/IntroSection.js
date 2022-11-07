@@ -3,27 +3,20 @@ import { Typewriter } from "react-simple-typewriter";
 import StarryDrop from "./IntroSectionComponents/StarryDrop";
 import Profile from "./IntroSectionComponents/3DAssets/Profile";
 
-
-
-
 const IntroSection = () => {
   return (
     <div className={styles.introduction}>
       <StarryDrop />
 
-   
-
-
       <div
         style={{
           position: "absolute",
-          cursor:"default",
-          top:"27%"
-
+          cursor: "default",
+          top: "27%",
         }}
       >
         <h1>Hello,</h1>
-        <h1>I'm Hasnain!</h1>
+        <h1>I&apos;m Hasnain!</h1>
 
         <h1
           style={{
