@@ -1,11 +1,12 @@
 import styles from "../styles/Home.module.css";
 import IntroSection from "../components/IntroSection";
-import SecondSection from "../components/Section2";
+import SecondSection from "../components/AboutSection";
+import ProjectsSection from "../components/ProjectsSection";
 
-import { FaGithubAlt } from "react-icons/fa";
-import { RiRocketLine } from "react-icons/ri";
-import { SiCodeigniter } from "react-icons/si";
+
 const Home = () => {
+
+
   return (
     <div className={styles.home}>
       {/* <div
@@ -42,6 +43,8 @@ const Home = () => {
         }}
       />
       <SecondSection />
+
+     <ProjectsSection/>
     </div>
   );
 };

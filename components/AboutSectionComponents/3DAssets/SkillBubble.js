@@ -31,22 +31,13 @@ const SkillBubble = () => {
       count -= 3.5;
 
       var z = 0;
-      const colorMap = useLoader(TextureLoader, "skills/" + e + ".png");
-      colorMap.encoding = THREE.sRGBEncoding;
-      const sc = Math.floor(Math.random() * (1.1 - 1 + 1) + 1);
 
-      const styles = useSpring({
-        loop: true,
-        to: [{ scale: 1.2 }, { scale: sc }],
+      const scale = Math.floor(Math.random() * (1.1 - 1 + 1) + 1);
 
-        from: { scale: sc },
-        config:{duration:2000}
-      });
 
       skillArray.push({
         positions: [x, y, z],
-        map: colorMap,
-        scale: styles.scale,
+        scale: scale,
         skill: e,
       });
     });
@@ -57,14 +48,16 @@ const SkillBubble = () => {
   const ref = useRef();
 
   const skilllist = skillArray().map((e, index) => (
-    <Skill key={index} scale={e.scale} map={e.map} position={e.positions} />
+    <Skill key={index} scale={e.scale} skill={e.skill} position={e.positions} />
   ));
 
   return <group ref={ref}>{skilllist}</group>;
 };
-const Skill = ({ scale, map, position }) => {
+const Skill = ({ scale, skill, position }) => {
   const { viewport } = useThree();
   const reff = useRef();
+  const map = useLoader(TextureLoader, "skills/" + skill + ".png");
+  map.encoding = THREE.sRGBEncoding;
 
   const vec = new THREE.Vector3();
   useFrame(({ mouse, camera }) => {
@@ -81,8 +74,15 @@ const Skill = ({ scale, map, position }) => {
     );
   });
 
+  const styles = useSpring({
+    loop: true,
+    to: [{ scale: 1.2 }, { scale: scale }],
+
+    from: { scale: scale },
+    config:{duration:2000}
+  });
   return (
-    <animated.mesh scale={scale} ref={reff} position={position}>
+    <animated.mesh scale={styles.scale} ref={reff} position={position}>
       <circleGeometry args={[2, 32]} />
       <meshStandardMaterial transparent={"true"} map={map} />
     </animated.mesh>

@@ -8,7 +8,7 @@ import Tag from "./AboutSectionComponents/Tag";
 import { Suspense } from "react";
 import SkillBubble from "./AboutSectionComponents/3DAssets/SkillBubble";
 
-const SecondSection = () => {
+const AboutSection = () => {
   return (
     <div className={styles.secondsection}>
       <Canvas
@@ -33,6 +33,7 @@ const SecondSection = () => {
             color: "#ffd369",
             margin: "0",
             fontWeight: "900",
+            fontSize:"3rem"
           }}
         >
           Who am I?
@@ -85,4 +86,4 @@ const SecondSection = () => {
     </div>
   );
 };
-export default SecondSection;
+export default AboutSection;
