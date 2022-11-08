@@ -65,15 +65,13 @@
   color: white;
   display: flex;
   flex: 2;
-  perspective: 1500px;
   border-radius: 20px;
 
   width: 300px;
   height: 400px;
-  background-color: #393e46;
-
   background-size: cover;
-  background-position: center center; /* optional, center the image */
+  background-position: center center;
+
 
   position: relative;
 
@@ -85,7 +83,7 @@
 }
 
 .card:hover {
-  transition-duration: 150ms;
+  transition-duration: 300ms;
   filter: drop-shadow(0px 10px 25px #222831);
 }
 

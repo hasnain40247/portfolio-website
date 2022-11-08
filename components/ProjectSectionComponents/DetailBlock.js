@@ -1,33 +1,24 @@
-import { useSpring, animated } from "@react-spring/web";
-import { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
-
 import Card from "./Card";
 import ProjectDetails from "./ProjectDetails";
+import { motion } from "framer-motion";
+
 const DetailBlock = ({ project, index }) => {
-  const [state, toggle] = useState(true);
-  const { x } = useSpring({
-    from: { x: 0 },
-    x: state ? 1 : 0,
-    config: { duration: 500 },
-  });
 
-  useEffect(() => {
-    console.log(state);
-    toggle(state=>!state);
-    console.log(state);
-
-  }, [index]);
   return (
-    <animated.div
+    <motion.div
       key={index}
-      style={{
-        opacity: x.to({ range: [0, 1], output: [0.7, 1] }),
-        scale: x.to({ range: [0, 1], output: [0.97, 1] }),
-      }}
+  
       className={styles.detailblock}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01]
+      }}
     >
-      <Card url={project.url} />
+      <Card image={project.url} />
       <ProjectDetails
         title={project.title}
         tags={project.tags}
@@ -36,7 +27,7 @@ const DetailBlock = ({ project, index }) => {
         details={project.details}
         styles={styles}
       />
-    </animated.div>
+    </motion.div>
   );
 };
 export default DetailBlock;
