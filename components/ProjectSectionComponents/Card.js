@@ -26,7 +26,6 @@ const Card = ({url}) => {
           y: topY - bounds.height / 2,
         };
         const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
-        console.log(distance);
 
         setTransform(`
 scale3d(1.07, 1.07, 1.07)

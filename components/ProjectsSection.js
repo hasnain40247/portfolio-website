@@ -1,21 +1,49 @@
 import styles from "../styles/Home.module.css";
-import Tag, { skillcolors } from "./AboutSectionComponents/Tag";
 import { projects } from "./Helpers/projects";
-import Card from "./ProjectSectionComponents/Card";
-import ProjectDetails from "./ProjectSectionComponents/ProjectDetails";
+import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
+import { useState } from "react";
+import DetailBlock from "./ProjectSectionComponents/DetailBlock";
 
 const ProjectsSection = () => {
-  let project = projects[0];
+  const [index, setIndex] = useState(0);
+  console.log(index);
   return (
     <div className={styles.projectsection}>
-      <Card url={project.url} />
-      <ProjectDetails
-        title={project.title}
-        tags={project.tags}
-        date={project.date}
-        link={project.link}
-        details={project.details}
-        styles={styles}
+      <AiFillLeftCircle
+        onClick={() => {
+          setIndex(index - 1 <= 0 ? 0 : index - 1);
+          console.log("hello");
+          console.log(index);
+        }}
+        className={styles.gitbutton}
+        style={{
+          color: "#393E46",
+          zIndex: 100,
+          cursor: "pointer",
+
+          margin: "20px",
+        }}
+      />
+      {projects.map((project, i) => {
+        if (index == i) {
+          return <DetailBlock   index={index} key={i} project={project} />;
+        } else return null;
+      })}
+
+      <AiFillRightCircle
+        onClick={() => {
+          setIndex(index + 1 <= projects.length - 1 ? index + 1 : index);
+
+          console.log("hello");
+          console.log(index);
+        }}
+        className={styles.gitbutton}
+        style={{
+          zIndex: 100,
+
+          color: "#393E46",
+          margin: "20px",
+        }}
       />
     </div>
   );

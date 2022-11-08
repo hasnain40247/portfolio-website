@@ -8,7 +8,7 @@ import Stars from "./3DAssets/Stars";
 
 const StarryDrop = () => {
   const ref = useRef();
-  const pref=useRef()
+  const pref = useRef();
 
   return (
     <div
@@ -26,20 +26,17 @@ const StarryDrop = () => {
         <Suspense fallback={null}>
           <Stars container={ref} />
           <CreateClouds />
-          <ProfileMesh pref={pref}/>
+          <ProfileMesh pref={pref} />
         </Suspense>
-        <Rig pref={pref}/>
+        <Rig />
       </Canvas>
     </div>
   );
 };
 
-function Rig({pref}) {
-  console.log(pref);
-  const camera = useThree((state) => state.camera)
-  const mouse = useThree((state) => state.mouse)
+function Rig() {
   const { viewport } = useThree();
-  
+
   const vec = new THREE.Vector3();
   return useFrame(({ mouse, camera }) => {
     const x = (mouse.x * viewport.width) / 2;
@@ -53,8 +50,6 @@ function Rig({pref}) {
       ),
       0.2
     );
-
-
   });
 }
 export default StarryDrop;

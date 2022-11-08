@@ -2,7 +2,6 @@ import styles from "../../styles/Home.module.css";
 
 
 const Tag = ({ skill, backcolor, color  }) => {
-  console.log(backcolor);
   return (
     <span
       className={styles.tag}

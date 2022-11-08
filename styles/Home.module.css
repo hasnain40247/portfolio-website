@@ -106,7 +106,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5% 15%;
 }
 
 .projectcontainer {
@@ -148,13 +147,22 @@
   background-color: #393e46;
   color: #eeeeee;
 }
-
+.detailblock {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  padding: 1.5% 15%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
 .gitbutton {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
 }
 
 .gitbutton:hover {
   color: #ffd369;
+
   filter: drop-shadow(0px 8px 7px #ffd369);
 }
