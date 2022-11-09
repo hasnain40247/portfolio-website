@@ -40,10 +40,9 @@ const Footer = () => {
         }}
       >
         <span
-        style={{
-          fontSize: "1rem",
-
-        }}
+          style={{
+            fontSize: "1rem",
+          }}
         >
           <BsChatRightTextFill />
         </span>{" "}
@@ -61,30 +60,73 @@ const Footer = () => {
           display: "flex",
         }}
       >
-        <GrLinkedinOption
+        <a
+          className={styles.gitbutton}
+          style={{
+            color: "#ffd369",
+            margin: "0 5px",
+          }}
+          target="_blank"
           href="https://www.linkedin.com/in/hasnain-sikora/"
-          className={styles.socialbutton}
-        />
-        <AiFillInstagram
+        >
+          <GrLinkedinOption />
+        </a>
+        <a
+          className={styles.gitbutton}
+          style={{
+            color: "#ffd369",
+            margin: "0 5px",
+          }}
+          target="_blank"
           href="https://www.instagram.com/_.hasnainn._/"
-          className={styles.socialbutton}
-        />
-        <FaGithubAlt
+        >
+          <AiFillInstagram />
+        </a>
+        <a
+          className={styles.gitbutton}
+          style={{
+            color: "#ffd369",
+            margin: "0 5px",
+          }}
+          target="_blank"
           href="https://github.com/hasnain40247"
-          className={styles.socialbutton}
-        />
-        <IoCamera
+        >
+          <FaGithubAlt />
+        </a>
+        <a
+          className={styles.gitbutton}
+          style={{
+            color: "#ffd369",
+            margin: "0 5px",
+          }}
+          target="_blank"
           href="https://www.instagram.com/_.justsomeshots._/?hl=en"
-          className={styles.socialbutton}
-        />
-        <SiLeetcode
+        >
+          <IoCamera />
+        </a>
+        <a
+          className={styles.gitbutton}
+          style={{
+            color: "#ffd369",
+            margin: "0 5px",
+          }}
+          target="_blank"
           href="https://leetcode.com/hnsikora/"
-          className={styles.socialbutton}
-        />
-        <FaUnsplash
+        >
+          <SiLeetcode />
+        </a>
+
+        <a
+          className={styles.gitbutton}
+          style={{
+            color: "#ffd369",
+            margin: "0 5px",
+          }}
+          target="_blank"
           href="https://unsplash.com/@hasnainsikora"
-          className={styles.socialbutton}
-        />
+        >
+          <FaUnsplash />
+        </a>
       </div>
 
       <p>

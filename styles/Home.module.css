@@ -61,24 +61,19 @@
 }
 
 .card {
-  text-align: center;
-  color: white;
   display: flex;
   flex: 2;
   border-radius: 20px;
 
-  width: 300px;
   height: 400px;
   background-size: cover;
-  background-position: center center;
-
-
+  background-position: center;
+  transform: perspective(1000px);
   position: relative;
-
   transition-duration: 300ms;
   transition-property: transform, filter;
   transition-timing-function: ease-out;
-  transform: rotate3d(0);
+  transform: rotate3d(0, 0, 0);
   filter: drop-shadow(0px 10px 25px rgb(255, 211, 105));
 }
 
@@ -96,13 +91,13 @@
 }
 
 .projectsection {
-  width: 100%;
   height: 100vh;
+  flex: 1;
   background-image: linear-gradient(#eeeeee, rgb(255, 211, 105, 0.5));
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -110,8 +105,11 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  word-break: break-word;
+
   margin: 0px 25px;
 }
+
 .projectitle {
   color: #393e46;
   margin: 0;
@@ -127,8 +125,10 @@
 .tag {
   font-weight: bold;
   font-family: Montserrat;
-  margin: 0 2px;
-  padding: 4px;
+  display: inline-block;
+  margin: 2px;
+
+  padding: 0px 4px;
   border-radius: 10px;
 }
 
@@ -148,14 +148,26 @@
 .detailblock {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  padding: 1.5% 15%;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 9;
+  /* position: absolute; */
+  /* padding: 1.5% 15%; */
+
   align-items: center;
+}
+.gitbutton:visited,.gitbutton:link{
+ 
+    color: white;
+    text-decoration: none;
+  
 }
 .gitbutton {
   font-size: 1.7rem;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
   cursor: pointer;
 }
 
@@ -166,15 +178,5 @@
 }
 
 
-.socialbutton {
-  font-size: 1.7rem;
-  margin: 0 5px;
 
-  cursor: pointer;
-}
 
-.socialbutton:hover {
-  color: #ffd369;
-
-  filter: drop-shadow(0px 8px 7px #ffd369);
-}

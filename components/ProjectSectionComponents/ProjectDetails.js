@@ -6,8 +6,19 @@ import { skillcolors } from "../Helpers/skillColors";
 const ProjectDetails = ({ title, tags, date, link, details, styles }) => {
   return (
     <div className={styles.projectcontainer}>
-      <h1 className={styles.projectitle}>{title}</h1>
-      <p>
+      <h1
+        style={{
+          fontSize: "1.7rem",
+        }}
+        className={styles.projectitle}
+      >
+        {title}
+      </h1>
+      <p
+        style={{
+          lineHeight: 2,
+        }}
+      >
         {tags.map((e, index) => (
           <Tag
             key={index}
@@ -19,14 +30,22 @@ const ProjectDetails = ({ title, tags, date, link, details, styles }) => {
       </p>
       <div className={styles.datepill}>
         <span>{date} </span>
-        <span style={{
-          fontWeight:"bolder",
-          color:"#FFD369",
-          fontStyle:"normal",
-          margin:"0px 8px"
-        }}>|</span>
+        <span
+          style={{
+            fontWeight: "bolder",
+            color: "#FFD369",
+            fontStyle: "normal",
+            margin: "0px 8px",
+          }}
+        >
+          |
+        </span>
 
-        <FaGithubAlt className={styles.gitbutton} href={link} />
+   
+          <a className={styles.gitbutton} target="_blank" href={link}>
+            <FaGithubAlt />
+          </a>
+     
       </div>
       <ul className={styles.projectdetails}>
         {details.map((e, index) => (

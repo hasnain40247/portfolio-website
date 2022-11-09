@@ -69,6 +69,7 @@ const AboutSection = () => {
             <a
               href="https://github.com/hasnain40247"
               className={styles.gitlink}
+            target="_blank"
             >
               {""}
               <FaGithubAlt
