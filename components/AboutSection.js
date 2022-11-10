@@ -70,6 +70,7 @@ const AboutSection = () => {
               href="https://github.com/hasnain40247"
               className={styles.gitlink}
             target="_blank"
+            rel="noopener noreferrer"
             >
               {""}
               <FaGithubAlt

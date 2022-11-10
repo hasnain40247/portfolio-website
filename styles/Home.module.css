@@ -154,20 +154,19 @@
 
   align-items: center;
 }
-.gitbutton:visited,.gitbutton:link{
- 
-    color: white;
-    text-decoration: none;
-  
+.gitbutton:visited,
+.gitbutton:link {
+  color: white;
+  text-decoration: none;
 }
 .gitbutton {
   font-size: 1.7rem;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   cursor: pointer;
 }
 
@@ -177,6 +176,8 @@
   filter: drop-shadow(0px 8px 7px #ffd369);
 }
 
-
-
-
+.worksection {
+  background-image: linear-gradient(rgb(255, 211, 105, 0.5) 20%,rgb(255, 211, 105));
+  width: 100%;
+  padding: 1.5% 0px;
+}

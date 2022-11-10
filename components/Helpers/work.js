@@ -1,0 +1,143 @@
+import { RiFilePaper2Fill } from "react-icons/ri";
+import { BsFillFileCodeFill } from "react-icons/bs";
+
+import Tag from "../AboutSectionComponents/Tag";
+import { skillcolors } from "./skillColors";
+import { AiFillMobile } from "react-icons/ai";
+
+export const timelineData = [
+  {
+    title: "Research Intern",
+    organization: "University",
+    date: "Ongoing",
+    description: [
+      <span>
+        Proposed and implemented a novel approach to medical image
+        classification using Quantum computing using{" "}
+        <Tag skill={"Python"} backcolor={skillcolors.python} /> and{" "}
+        <Tag skill={"Pennylane.ai"} backcolor={skillcolors.pennylane} />
+      </span>,
+      <span>
+        Writing a paper comparing the efficiency of parallelism in image
+        classification between QCNN, Quanvolutional network and traditional
+        CNNs.
+      </span>,
+      <span>
+        Used various quantum simulators and computers offered by AWS and
+        pennylane to construct parameterized quantum gates that take encoded
+        qubits and subjects them to unitary operations that simulate a
+        convolutional and max-pooling layer.
+      </span>,
+    ],
+    category: {
+      icon: (
+        <RiFilePaper2Fill
+          style={{
+            fontSize: "1.3rem",
+            color: "#FFD369",
+          }}
+        />
+      ),
+      tag: "Internship",
+      color: "#018f69",
+    },
+    link: {
+      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
+      text: "Read more",
+    },
+  },
+  {
+    title: "Software Developer Intern",
+    organization: "Skybase IT",
+    description: [
+      <span>
+        Implemented various web and mobile applications using{" "}
+        <Tag skill="PHP" backcolor={skillcolors.php} /> ,
+        <Tag skill="MySQL" backcolor={skillcolors.sql} />,{" "}
+        <Tag skill="Javascript" backcolor={skillcolors.javascript} /> and{" "}
+        <Tag skill="Java" backcolor={skillcolors.java} />
+      </span>,
+      <span>
+        Developed applications using Google Cloud APIs such as Directions,
+        Geocoding, Places and Maps SDK.
+      </span>,
+      <span>
+        Attended regular task updates and drafting methodology write-ups
+      </span>,
+      <span>
+        Additionally, integrated map's customisability using Google maps
+        Polygons and Waypoints services.
+      </span>,
+      <span>
+        Used <Tag skill={"Java"} backcolor={skillcolors.java} /> to make mobile
+        native versions of the websites using various utility packages.
+      </span>,
+    ],
+    date: "Jun-Sept 2021",
+    category: {
+      icon: (
+        <BsFillFileCodeFill
+          style={{
+            fontSize: "1.3rem",
+            color: "#FFD369",
+          }}
+        />
+      ),
+      tag: "medium",
+      color: "#018f69",
+    },
+    link: {
+      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
+      text: "Read more",
+    },
+  },
+  {
+    title: "App Development Head",
+    organization: "HackClub, VIT",
+    description: [
+      <span>
+        Led a team of enthusiastic app developers to design and create android
+        apps using <Tag skill={"Flutter"} backcolor={skillcolors.flutter} /> and{" "}
+        <Tag skill={"React Native"} backcolor={skillcolors.reactnative} /> along
+        with <Tag skill={"Firebase"} backcolor={skillcolors.firebase} /> in
+        collaboration with other university clubs
+      </span>,
+      <span>
+        Organized meetings, delegated tasks and recruited members for an
+        efficient workflow of the club
+      </span>,
+      <span>
+        Hosted a <Tag skill={"Flutter"} backcolor={skillcolors.flutter} />{" "}
+        workshop for the HackClub&#39;s university event with over 120
+        participants
+      </span>,
+      <span>
+        Interviewer for multiple club recruitments as well as part of the
+        judging panel for hackathons
+      </span>,
+      <span>
+        Mentored and guided students through{" "}
+        <Tag skill={"Web 3.0"} backcolor={skillcolors.web3} /> storage and
+        decentralized apps using Crust and Polygon at a 48-hour university
+        Hackathon
+      </span>,
+    ],
+    date: "Jun-Sept 2021",
+    category: {
+      icon: (
+        <AiFillMobile
+          style={{
+            fontSize: "1.3rem",
+            color: "#FFD369",
+          }}
+        />
+      ),
+      tag: "medium",
+      color: "#018f69",
+    },
+    link: {
+      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
+      text: "Read more",
+    },
+  },
+];

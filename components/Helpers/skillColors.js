@@ -19,5 +19,10 @@ export const skillcolors = {
     chash:"#9d6ed7",
     ngrok:"#02238f",
     three:"#040404",
-    electron:"#9feaf9"
+    electron:"#9feaf9",
+    php:"#777bb3",
+    java:"#0d8ac7",
+    sql:"#ffa518",
+    web3:"#f7931a",
+    pennylane:"#ffbe0c"
   };

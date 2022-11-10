@@ -61,6 +61,7 @@ const Footer = () => {
         }}
       >
         <a
+          rel="noopener noreferrer"
           className={styles.gitbutton}
           style={{
             color: "#ffd369",
@@ -72,6 +73,7 @@ const Footer = () => {
           <GrLinkedinOption />
         </a>
         <a
+          rel="noopener noreferrer"
           className={styles.gitbutton}
           style={{
             color: "#ffd369",
@@ -83,6 +85,7 @@ const Footer = () => {
           <AiFillInstagram />
         </a>
         <a
+          rel="noopener noreferrer"
           className={styles.gitbutton}
           style={{
             color: "#ffd369",
@@ -94,6 +97,7 @@ const Footer = () => {
           <FaGithubAlt />
         </a>
         <a
+          rel="noopener noreferrer"
           className={styles.gitbutton}
           style={{
             color: "#ffd369",
@@ -105,6 +109,7 @@ const Footer = () => {
           <IoCamera />
         </a>
         <a
+          rel="noopener noreferrer"
           className={styles.gitbutton}
           style={{
             color: "#ffd369",
@@ -117,6 +122,7 @@ const Footer = () => {
         </a>
 
         <a
+          rel="noopener noreferrer"
           className={styles.gitbutton}
           style={{
             color: "#ffd369",

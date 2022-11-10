@@ -42,7 +42,9 @@ const ProjectDetails = ({ title, tags, date, link, details, styles }) => {
         </span>
 
    
-          <a className={styles.gitbutton} target="_blank" href={link}>
+          <a className={styles.gitbutton} target="_blank" href={link}
+          rel="noopener noreferrer"
+          >
             <FaGithubAlt />
           </a>
      
