@@ -11,18 +11,18 @@ export const timelineData = [
     organization: "University",
     date: "Ongoing",
     description: [
-      <span>
+      <span key={"1"}>
         Proposed and implemented a novel approach to medical image
         classification using Quantum computing using{" "}
         <Tag skill={"Python"} backcolor={skillcolors.python} /> and{" "}
         <Tag skill={"Pennylane.ai"} backcolor={skillcolors.pennylane} />
       </span>,
-      <span>
+      <span key={"2"}>
         Writing a paper comparing the efficiency of parallelism in image
         classification between QCNN, Quanvolutional network and traditional
         CNNs.
       </span>,
-      <span>
+      <span key={"3"}>
         Used various quantum simulators and computers offered by AWS and
         pennylane to construct parameterized quantum gates that take encoded
         qubits and subjects them to unitary operations that simulate a
@@ -38,37 +38,31 @@ export const timelineData = [
           }}
         />
       ),
-      tag: "Internship",
-      color: "#018f69",
-    },
-    link: {
-      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
-      text: "Read more",
     },
   },
   {
     title: "Software Developer Intern",
     organization: "Skybase IT",
     description: [
-      <span>
+      <span key={"1"}>
         Implemented various web and mobile applications using{" "}
         <Tag skill="PHP" backcolor={skillcolors.php} /> ,
         <Tag skill="MySQL" backcolor={skillcolors.sql} />,{" "}
         <Tag skill="Javascript" backcolor={skillcolors.javascript} /> and{" "}
         <Tag skill="Java" backcolor={skillcolors.java} />
       </span>,
-      <span>
+      <span key={"2"}>
         Developed applications using Google Cloud APIs such as Directions,
         Geocoding, Places and Maps SDK.
       </span>,
-      <span>
+      <span key={"3"}>
         Attended regular task updates and drafting methodology write-ups
       </span>,
-      <span>
-        Additionally, integrated map's customisability using Google maps
+      <span key={"4"}>
+        Additionally, integrated map&#38;s customisability using Google maps
         Polygons and Waypoints services.
       </span>,
-      <span>
+      <span key={"5"}>
         Used <Tag skill={"Java"} backcolor={skillcolors.java} /> to make mobile
         native versions of the websites using various utility packages.
       </span>,
@@ -83,39 +77,33 @@ export const timelineData = [
           }}
         />
       ),
-      tag: "medium",
-      color: "#018f69",
-    },
-    link: {
-      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
-      text: "Read more",
     },
   },
   {
     title: "App Development Head",
     organization: "HackClub, VIT",
     description: [
-      <span>
+      <span key={"1"}>
         Led a team of enthusiastic app developers to design and create android
         apps using <Tag skill={"Flutter"} backcolor={skillcolors.flutter} /> and{" "}
         <Tag skill={"React Native"} backcolor={skillcolors.reactnative} /> along
         with <Tag skill={"Firebase"} backcolor={skillcolors.firebase} /> in
         collaboration with other university clubs
       </span>,
-      <span>
+      <span key={"2"}>
         Organized meetings, delegated tasks and recruited members for an
         efficient workflow of the club
       </span>,
-      <span>
+      <span key={"3"}>
         Hosted a <Tag skill={"Flutter"} backcolor={skillcolors.flutter} />{" "}
         workshop for the HackClub&#39;s university event with over 120
         participants
       </span>,
-      <span>
+      <span key={"4"}>
         Interviewer for multiple club recruitments as well as part of the
         judging panel for hackathons
       </span>,
-      <span>
+      <span key={"5"}>
         Mentored and guided students through{" "}
         <Tag skill={"Web 3.0"} backcolor={skillcolors.web3} /> storage and
         decentralized apps using Crust and Polygon at a 48-hour university
@@ -132,12 +120,6 @@ export const timelineData = [
           }}
         />
       ),
-      tag: "medium",
-      color: "#018f69",
-    },
-    link: {
-      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
-      text: "Read more",
     },
   },
 ];

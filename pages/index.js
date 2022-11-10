@@ -47,7 +47,7 @@ const Home = () => {
       <ProjectsSection />
      
       <div className={styles.worksection}>
-      <h1
+         <h1
         style={{
           textAlign: "center",
           marginTop: "10px",
