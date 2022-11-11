@@ -41,6 +41,40 @@ export const timelineData = [
     },
   },
   {
+    title: "Research Paper",
+    organization: "University",
+    date: "March, 2022",
+    description: [
+      <span key={"1"}>
+        Proposed and implemented a novel approach to medical image
+        classification using Quantum computing using{" "}
+        <Tag skill={"Python"} backcolor={skillcolors.python} /> and{" "}
+        <Tag skill={"Pennylane.ai"} backcolor={skillcolors.pennylane} />
+      </span>,
+      <span key={"2"}>
+        Writing a paper comparing the efficiency of parallelism in image
+        classification between QCNN, Quanvolutional network and traditional
+        CNNs.
+      </span>,
+      <span key={"3"}>
+        Used various quantum simulators and computers offered by AWS and
+        pennylane to construct parameterized quantum gates that take encoded
+        qubits and subjects them to unitary operations that simulate a
+        convolutional and max-pooling layer.
+      </span>,
+    ],
+    category: {
+      icon: (
+        <RiFilePaper2Fill
+          style={{
+            fontSize: "1.3rem",
+            color: "#FFD369",
+          }}
+        />
+      ),
+    },
+  },
+  {
     title: "Software Developer Intern",
     organization: "Skybase IT",
     description: [

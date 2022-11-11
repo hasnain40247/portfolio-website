@@ -91,7 +91,8 @@
 }
 
 .projectsection {
-  height: 100vh;
+  min-height: 100vh;
+
   flex: 1;
   background-image: linear-gradient(#eeeeee, rgb(255, 211, 105, 0.5));
   box-sizing: border-box;
@@ -177,7 +178,59 @@
 }
 
 .worksection {
-  background-image: linear-gradient(rgb(255, 211, 105, 0.5) 20%,rgb(255, 211, 105));
+  background-image: linear-gradient(
+    rgb(255, 211, 105, 0.5) 20%,
+    rgb(255, 211, 105)
+  );
   width: 100%;
+  min-height: 100vh;
+
   padding: 1.5% 0px;
+}
+
+.contactsection {
+  width: 100%;
+  min-height: 50vh;
+  background-image: linear-gradient(rgb(255, 211, 105) 0%, #222831 97%);
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactinput {
+  background-color: #FFD369;
+  font-family: "Montserrat";
+
+  color: #393e46;
+  margin: 10px;
+  outline: none;
+  border:none;
+
+
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+.contactinput:focus {
+
+  outline: none;
+  filter: drop-shadow(0px 5px 7px #FFD369);
+}
+.contactbutton{
+  background-color: #393e46;
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Montserrat";
+
+  width: 100%;
+  margin: 10px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+  font-size: 1.2rem;
+
+
 }
