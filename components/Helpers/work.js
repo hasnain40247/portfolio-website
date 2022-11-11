@@ -10,6 +10,9 @@ export const timelineData = [
     title: "Research Intern",
     organization: "University",
     date: "Ongoing",
+    links:{
+      github:"blank"
+    },
     description: [
       <span key={"1"}>
         Proposed and implemented a novel approach to medical image
@@ -42,25 +45,30 @@ export const timelineData = [
   },
   {
     title: "Research Paper",
-    organization: "University",
+    organization: "ICGIM'2022",
     date: "March, 2022",
+    links: {
+      github: "",
+      paper: "https://www.scribd.com/document/605514182/ICGIM-2022-Proceedings",
+    },
     description: [
       <span key={"1"}>
-        Proposed and implemented a novel approach to medical image
-        classification using Quantum computing using{" "}
-        <Tag skill={"Python"} backcolor={skillcolors.python} /> and{" "}
-        <Tag skill={"Pennylane.ai"} backcolor={skillcolors.pennylane} />
+        Implemented an approach for network intrusion detection using
+        <Tag skill={"Autoencoders"} backcolor={skillcolors.python} /> and{" "}
+        <Tag skill={"Genetic Algorithm"} backcolor={skillcolors.pennylane} />
       </span>,
       <span key={"2"}>
-        Writing a paper comparing the efficiency of parallelism in image
-        classification between QCNN, Quanvolutional network and traditional
-        CNNs.
+        Thorough research and comparision of verious traditional methods on the
+        dataset juxtaposed with proposed model.
       </span>,
       <span key={"3"}>
-        Used various quantum simulators and computers offered by AWS and
-        pennylane to construct parameterized quantum gates that take encoded
-        qubits and subjects them to unitary operations that simulate a
-        convolutional and max-pooling layer.
+        Created an autoencoder which is trained on a feature-reduced NSL-KDD
+        dataset whose encoder learns to reconstruct mallicious datapoints to
+        patternize the problem.
+      </span>,
+      <span key={"4"}>
+        Used the generative population evolution to select best suited weights
+        for the autoencoder model.
       </span>,
     ],
     category: {
@@ -77,6 +85,9 @@ export const timelineData = [
   {
     title: "Software Developer Intern",
     organization: "Skybase IT",
+    links:{
+      github:"https://github.com/hasnain40247/gmap_vehicle_navigation"
+    },
     description: [
       <span key={"1"}>
         Implemented various web and mobile applications using{" "}
@@ -116,6 +127,9 @@ export const timelineData = [
   {
     title: "App Development Head",
     organization: "HackClub, VIT",
+    links:{
+      github:"https://github.com/HackclubVIT"
+    },
     description: [
       <span key={"1"}>
         Led a team of enthusiastic app developers to design and create android

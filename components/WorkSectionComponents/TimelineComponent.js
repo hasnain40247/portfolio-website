@@ -1,4 +1,5 @@
 import { FaGithubAlt } from "react-icons/fa";
+import { RiFilePaper2Fill } from "react-icons/ri";
 import styles from "../../styles/Home.module.css";
 
 const TimelineItem = ({ data }) => {
@@ -33,14 +34,26 @@ const TimelineItem = ({ data }) => {
             |
           </span>
 
-          <a
-            className={styles.gitbutton}
-            target="_blank"
-            href={""}
-            rel="noopener noreferrer"
-          >
-            <FaGithubAlt />
-          </a>
+          {data.links.github && (
+            <a
+              className={styles.gitbutton}
+              target="_blank"
+              href={data.links.github}
+              rel="noopener noreferrer"
+            >
+              <FaGithubAlt />
+            </a>
+          )}
+          {data.links.paper && (
+            <a
+              className={styles.gitbutton}
+              target="_blank"
+              href={data.links.paper}
+              rel="noopener noreferrer"
+            >
+              <RiFilePaper2Fill />
+            </a>
+          )}
         </div>
 
         <ul

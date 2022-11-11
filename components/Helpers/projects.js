@@ -114,6 +114,7 @@ export const projects = [
       { skill: "Blender", backcolor: skillcolors.blender, color: "#EEEEEE" },
       { skill: "C#", backcolor: skillcolors.chash, color: "#393E46" },
     ],
+    demo:"https://hasnain40247.itch.io/astray",
     url: "https://i.imgur.com/kGYTmpQ.png",
     date: "Aug, 2021",
     link: "https://github.com/hasnain40247/Astray",
@@ -147,6 +148,34 @@ export const projects = [
     url: "https://i.imgur.com/cThg5PY.png",
     date: "Aug, 2021",
     link: "https://github.com/hasnain40247/twitterCloneProvider",
+    details: [
+      "Designed UI based on Twitter with Expo-cli and React native.",
+      "Implemented an API using Express.js and NGROK from scratch to handle authentication as well as storage of tweets",
+      "Used MongoDB’s flexible documents to add new tweets, user IDs, time and comments.",
+    ],
+  },
+  {
+    title: "Decentralized Crypto faucet and NFT market platform",
+    demo:"https://d3azs-faaaa-aaaal-abada-cai.ic0.app/",
+    tags: [
+      {
+        skill: "ReactJS",
+        backcolor: skillcolors.react,
+        color: "#EEEEEE",
+      },
+
+      {
+        skill: "Javascript",
+        backcolor: skillcolors.javascript,
+        color: "#393E46",
+      },
+      { skill: "Motoko", backcolor: skillcolors.motoko, color: "#393E46" },
+      { skill: "Dfinity", backcolor: skillcolors.dfinity, color: "#EEEEEE" },
+
+    ],
+    url: "https://i.imgur.com/Jvul7AV.png",
+    date: "Aug, 2022",
+    link: "https://github.com/hasnain40247/NFT-Market-DApp",
     details: [
       "Designed UI based on Twitter with Expo-cli and React native.",
       "Implemented an API using Express.js and NGROK from scratch to handle authentication as well as storage of tweets",

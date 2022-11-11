@@ -24,5 +24,7 @@ export const skillcolors = {
     java:"#0d8ac7",
     sql:"#ffa518",
     web3:"#f7931a",
-    pennylane:"#ffbe0c"
+    pennylane:"#ffbe0c",
+    motoko:"#bc2e7e",
+    dfinity:"#2dace3"
   };

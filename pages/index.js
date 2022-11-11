@@ -4,8 +4,7 @@ import SecondSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import WorkSection from "../components/WorkSection";
 import ContactSection from "../components/ContactSection";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+
 
 const Home = () => {
   return (
@@ -45,6 +44,8 @@ const Home = () => {
       />
       <SecondSection />
       <ProjectsSection />
+      
+
       <WorkSection />
       <ContactSection />
     </div>

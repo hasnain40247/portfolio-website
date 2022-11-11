@@ -1,9 +1,10 @@
 import { FaGitAlt, FaGithubAlt } from "react-icons/fa";
+import {HiComputerDesktop} from "react-icons/hi2"
 import Tag from "../AboutSectionComponents/Tag";
 import { projects } from "../Helpers/projects";
 import { skillcolors } from "../Helpers/skillColors";
 
-const ProjectDetails = ({ title, tags, date, link, details, styles }) => {
+const ProjectDetails = ({ project, styles }) => {
   return (
     <div className={styles.projectcontainer}>
       <h1
@@ -12,14 +13,14 @@ const ProjectDetails = ({ title, tags, date, link, details, styles }) => {
         }}
         className={styles.projectitle}
       >
-        {title}
+        {project.title}
       </h1>
       <p
         style={{
           lineHeight: 2,
         }}
       >
-        {tags.map((e, index) => (
+        {project.tags.map((e, index) => (
           <Tag
             key={index}
             skill={e.skill}
@@ -29,7 +30,7 @@ const ProjectDetails = ({ title, tags, date, link, details, styles }) => {
         ))}
       </p>
       <div className={styles.datepill}>
-        <span>{date} </span>
+        <span>{project.date} </span>
         <span
           style={{
             fontWeight: "bolder",
@@ -42,15 +43,22 @@ const ProjectDetails = ({ title, tags, date, link, details, styles }) => {
         </span>
 
    
-          <a className={styles.gitbutton} target="_blank" href={link}
+          <a className={styles.gitbutton} target="_blank" href={project.link}
           rel="noopener noreferrer"
           >
             <FaGithubAlt />
           </a>
+          {project.demo &&
+              <a className={styles.gitbutton} target="_blank" href={project.link}
+              rel="noopener noreferrer"
+              >
+                <HiComputerDesktop/>
+              </a>
+          }
      
       </div>
       <ul className={styles.projectdetails}>
-        {details.map((e, index) => (
+        {project.details.map((e, index) => (
           <li key={index}>{e}</li>
         ))}
       </ul>
