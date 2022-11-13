@@ -90,9 +90,6 @@
   top: 0;
 }
 
-
-
-
 .projectsection {
   min-height: 100vh;
 
@@ -152,6 +149,7 @@
 .detailblock {
   display: flex;
   flex-direction: row;
+
   flex: 9;
   /* position: absolute; */
   /* padding: 1.5% 15%; */
@@ -159,8 +157,12 @@
   align-items: center;
 }
 .gitbutton:visited,
-.gitbutton:link
-{
+.gitbutton:link {
+  color: white;
+  text-decoration: none;
+}
+.arrowbutton:visited,
+.arrowbutton:link {
   color: white;
   text-decoration: none;
 }
@@ -181,6 +183,25 @@
 }
 
 .gitbutton:hover {
+  color: #ffd369;
+
+  filter: drop-shadow(0px 8px 7px #ffd369);
+}
+
+
+.arrowbutton {
+  font-size: 1.7rem;
+  margin: 0px 4px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.arrowbutton:hover {
   color: #ffd369;
 
   filter: drop-shadow(0px 8px 7px #ffd369);
@@ -238,4 +259,51 @@
 
   border-radius: 10px;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .secondsection {
+    padding: 10px;
+    height: auto !important;
+    min-height: auto !important;
+  }
+  .card {
+    height: 200px !important;
+    width: 100% !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    filter: drop-shadow(0px 5px 6px rgb(255, 211, 105));
+  }
+
+  .detailblock {
+    flex-direction: column !important;
+    align-self: stretch;
+    display: block;
+    /* min-height: 100vh;   */
+  
+  }
+
+  .projectcontainer {
+    margin: 10px 1px !important;
+  }
+
+  .projectcontainer h1 {
+    font-size: medium !important;
+  }
+
+  .projectcontainer ul {
+    font-size: 0.8rem !important;
+  }
+
+  .tag {
+    font-size: 0.8rem !important;
+  }
+  .datepill {
+    font-size: 0.8rem !important;
+    padding: 3px 6px;
+  }
+
+  .arrowbutton{
+    display: none;
+  }
 }

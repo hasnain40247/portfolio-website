@@ -4,13 +4,9 @@ import SecondSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import WorkSection from "../components/WorkSection";
 import ContactSection from "../components/ContactSection";
-import ReactLoading from "react-loading";
-
-
-
+import Gradient from "../components/Gradient";
 
 const Home = () => {
- 
   return (
     <div className={styles.home}>
       {/* <div
@@ -36,25 +32,15 @@ const Home = () => {
 
         <FaGithubAlt />
       </div> */}
+
       <IntroSection />
-      <div
-        style={{
-          width: "100%",
-          top: "82%",
-          height: "150px",
-          backgroundImage: "linear-gradient(transparent,#EEEEEE)",
-          position: "absolute",
-        }}
-      />
+      <Gradient />
       <SecondSection />
       <ProjectsSection />
-      
 
       <WorkSection />
       <ContactSection />
     </div>
-
-
   );
 };
 

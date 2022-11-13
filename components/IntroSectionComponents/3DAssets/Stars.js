@@ -13,7 +13,7 @@ const Stars=(props)=> {
   
     const ref = useRef();
     const [sphere] = useState(() =>
-      random.inSphere(new Float32Array(10000), { radius: 130 })
+      random.inSphere(new Float32Array(10000), { radius: 90 })
     );
   
       useFrame(({ mouse, camera }) => {

@@ -1,29 +1,23 @@
 import styles from "../styles/Home.module.css";
 import { Typewriter } from "react-simple-typewriter";
 import StarryDrop from "./IntroSectionComponents/StarryDrop";
-
+import ScrollIndicator from "./IntroSectionComponents/ScrollIndicator";
+import ProfileImage from "./IntroSectionComponents/ProfileImage";
 
 const IntroSection = () => {
   return (
     <div className={styles.introduction}>
-
-<StarryDrop />
-
-
-      <div
-        style={{
-          position: "absolute",
-          cursor: "default",
-          top: "27%",
-        }}
-      >
-        <h1>Hello,</h1>
-        <h1>I&apos;m Hasnain!</h1>
+      <StarryDrop />
+      <ProfileImage />
+      <div className="titleDiv">
+        <h1 className="titleDiv-h1">Hello,</h1>
+        <h1 className="titleDiv-h1">I&apos;m Hasnain!</h1>
 
         <h1
           style={{
             color: "#222831",
           }}
+          className="titleDiv-h1"
         >
           I
           <span
@@ -45,6 +39,7 @@ const IntroSection = () => {
           </span>
         </h1>
       </div>
+      <ScrollIndicator />
     </div>
   );
 };

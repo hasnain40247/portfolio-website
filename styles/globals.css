@@ -74,14 +74,12 @@ body {
   transition-property: transform, filter;
   transition-timing-function: ease-out;
   z-index: 1000;
-
-
 }
 
 .timeline-item-content::after {
   content: " ";
   background-color: #eeeeee;
- z-index: -5;;
+  z-index: -5;
 
   position: absolute;
   right: -2.5px;
@@ -95,7 +93,7 @@ body {
   transition-duration: 300ms;
 
   filter: drop-shadow(0px 8px 10px #222831);
-  transform: scale(1.07) ;
+  transform: scale(1.07);
 }
 .timeline-item:nth-child(odd) .timeline-item-content {
   text-align: left;
@@ -170,6 +168,23 @@ body {
   left: -60px;
 }
 
+.titleDiv {
+  position: absolute;
+  cursor: default;
+  top: 27%;
+}
+
+.titleDiv-h1 {
+  /* background-color: red; */
+  font-family: "Montserrat";
+  font-weight: bolder;
+}
+.profileimg, .scrollindicator, .hiddenicons {
+  display: none;
+}
+
+
+
 @media only screen and (max-width: 1023px) {
   .timeline-item-content {
     max-width: 100%;
@@ -200,4 +215,48 @@ body {
   .timeline-item-content a::after {
     display: none;
   }
+
+  .profileimg {
+    display: block;
+    position: absolute;
+    top: 5%;
+  }
+  .titleDiv {
+    position: absolute;
+    cursor: default;
+    top: 35%;
+  }
+  .titleDiv-h1 {
+    font-size: 2.5rem !important;
+  }
+  .scrollindicator{
+    
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      color: #222831;
+    
+  }
+
+  .aboutitle{
+    font-size: 2.5rem !important;
+  }
+  .aboutcontent{
+    font-size: 0.8rem !important;
+    line-height: 2 !important;
+  }
+  .gitabout{
+    font-size: 1.2rem !important;
+    top:5px !important
+  }
+.carosel{
+  justify-content: center;
+  padding: 10px;
+  margin-top: 2px !important;
+}
+
+.hiddenicons{
+  display: flex
+
+}
 }

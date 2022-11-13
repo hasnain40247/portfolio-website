@@ -3,6 +3,7 @@ import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
 import { useState } from "react";
 import styles from "../../styles/Home.module.css";
 import { projects } from "../Helpers/projects";
+import HiddenIcons from "./HiddenIcons";
 
 const ProjectCarousel = () => {
   const [index, setIndex] = useState(0);
@@ -11,38 +12,53 @@ const ProjectCarousel = () => {
     <div
       style={{
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
         alignSelf: "stretch",
         alignItems: "center",
-        justifyContent: "space-between",
       }}
     >
-      <AiFillLeftCircle
-        onClick={() => setIndex(index - 1 <= 0 ? 0 : index - 1)}
-        className={styles.gitbutton}
-        style={{
-          color: "#393E46",
-          cursor: "pointer",
-          flex: 1,
-        }}
-      />
-      {projects.map((project, i) => {
-        if (index == i) {
-          return <DetailBlock index={index} key={i} project={project} />;
-        } else return null;
-      })}
+      <HiddenIcons index={index} setIndex={setIndex} length={projects.length}/>
 
-      <AiFillRightCircle
-        onClick={() => setIndex(index + 1 <= projects.length - 1 ? index + 1 : index)
-        }
-        className={styles.gitbutton}
+      <div
+        className="carosel"
         style={{
-          color: "#393E46",
-          flex: 1,
-
-          cursor: "pointer",
+          display: "flex",
+          flexDirection: "row",
+          marginTop: "20px",
+          alignSelf: "stretch",
+          alignItems: "center",
+          justifyContent: "center",
         }}
-      />
+      >
+        <AiFillLeftCircle
+          onClick={() => setIndex(index - 1 <= 0 ? 0 : index - 1)}
+          className={styles.arrowbutton}
+          style={{
+            color: "#393E46",
+            cursor: "pointer",
+            flex: 1,
+          }}
+        />
+        {projects.map((project, i) => {
+          if (index == i) {
+            return <DetailBlock index={index} key={i} project={project} />;
+          } else return null;
+        })}
+
+        <AiFillRightCircle
+          onClick={() =>
+            setIndex(index + 1 <= projects.length - 1 ? index + 1 : index)
+          }
+          className={styles.arrowbutton}
+          style={{
+            color: "#393E46",
+            flex: 1,
+
+            cursor: "pointer",
+          }}
+        />
+      </div>
+
     </div>
   );
 };

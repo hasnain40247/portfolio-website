@@ -9,7 +9,7 @@ const ProjectsSection = () => {
         <h1
           style={{
             textAlign: "center",
-            marginTop: "10px",
+            marginTop: "20px",
           }}
           className={styles.projectitle}
         >

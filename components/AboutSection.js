@@ -29,6 +29,7 @@ const AboutSection = () => {
 
       <div className={styles.container}>
         <h1
+        className="aboutitle"
           style={{
             color: "#ffd369",
             margin: "0",
@@ -40,6 +41,8 @@ const AboutSection = () => {
         </h1>
 
         <p
+        className="aboutcontent"
+
           style={{
             lineHeight: 2,
             fontSize: "1.2rem",
@@ -74,6 +77,7 @@ const AboutSection = () => {
             >
               {""}
               <FaGithubAlt
+              className="gitabout"
                 style={{
                   fontSize: "2rem",
                   position: "relative",

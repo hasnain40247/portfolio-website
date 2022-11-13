@@ -3,14 +3,11 @@ import Card from "./Card";
 import ProjectDetails from "./ProjectDetails";
 import { motion } from "framer-motion";
 
-const DetailBlock = ({ type, project, index }) => {
+const DetailBlock = ({ project, index }) => {
   return (
     <motion.div
       key={index}
       className={styles.detailblock}
-      style={{
-        flexDirection: type === "mobile" ? "row-reverse" : "row",
-      }}
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
