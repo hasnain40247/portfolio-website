@@ -1,18 +1,48 @@
+import { FaGithubAlt } from "react-icons/fa";
 import styles from "../styles/Home.module.css";
 import ProjectCarousel from "./ProjectSectionComponents/ProjectCarousel";
 
 const ProjectsSection = () => {
   return (
     <div className={styles.projectsection}>
-      <h1
-        style={{
-          textAlign: "center",
-          marginTop: "10px",
-        }}
-        className={styles.projectitle}
-      >
-        Projects
-      </h1>
+      <div>
+        <h1
+          style={{
+            textAlign: "center",
+            marginTop: "10px",
+          }}
+          className={styles.projectitle}
+        >
+          Projects
+        </h1>
+        <p
+          style={{
+            margin: "0",
+            fontStyle:"italic"
+          }}
+        >
+          Check them all out at{" "}
+          <span>
+            <a
+              href="https://github.com/hasnain40247"
+              className={styles.gitlink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {""}
+              <FaGithubAlt
+                style={{
+                  fontSize: "2rem",
+                  position: "relative",
+
+                  alignSelf: "center",
+                  top: "10px",
+                }}
+              />
+            </a>
+          </span>
+        </p>
+      </div>
       <ProjectCarousel />
     </div>
   );

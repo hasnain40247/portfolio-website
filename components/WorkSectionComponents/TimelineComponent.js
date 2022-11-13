@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { FaGithubAlt } from "react-icons/fa";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import styles from "../../styles/Home.module.css";

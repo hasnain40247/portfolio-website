@@ -1,12 +1,14 @@
 import styles from "../styles/Home.module.css";
 import { Typewriter } from "react-simple-typewriter";
 import StarryDrop from "./IntroSectionComponents/StarryDrop";
-import Profile from "./IntroSectionComponents/3DAssets/Profile";
+
 
 const IntroSection = () => {
   return (
     <div className={styles.introduction}>
-      <StarryDrop />
+
+<StarryDrop />
+
 
       <div
         style={{

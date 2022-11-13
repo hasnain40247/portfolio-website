@@ -4,9 +4,13 @@ import SecondSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import WorkSection from "../components/WorkSection";
 import ContactSection from "../components/ContactSection";
+import ReactLoading from "react-loading";
+
+
 
 
 const Home = () => {
+ 
   return (
     <div className={styles.home}>
       {/* <div
@@ -49,6 +53,8 @@ const Home = () => {
       <WorkSection />
       <ContactSection />
     </div>
+
+
   );
 };
 

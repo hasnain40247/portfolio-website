@@ -8,7 +8,7 @@ import { AiFillMobile } from "react-icons/ai";
 export const timelineData = [
   {
     title: "Research Intern",
-    organization: "University",
+    organization: "VIT, Chennai",
     date: "Ongoing",
     links:{
       github:"blank"
@@ -158,7 +158,7 @@ export const timelineData = [
         Hackathon
       </span>,
     ],
-    date: "Jun-Sept 2021",
+    date: "Jun 2021 - July 2022",
     category: {
       icon: (
         <AiFillMobile

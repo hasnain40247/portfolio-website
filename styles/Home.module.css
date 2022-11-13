@@ -43,8 +43,8 @@
 }
 
 .gitlink {
-  color: #222831;
   text-decoration: none;
+  color: #393e46;
 }
 
 .gitlink:hover {
@@ -89,6 +89,9 @@
   left: 0;
   top: 0;
 }
+
+
+
 
 .projectsection {
   min-height: 100vh;
@@ -156,13 +159,18 @@
   align-items: center;
 }
 .gitbutton:visited,
-.gitbutton:link {
+.gitbutton:link
+{
   color: white;
+  text-decoration: none;
+}
+.gitlink:visited,
+.gitlink:link {
   text-decoration: none;
 }
 .gitbutton {
   font-size: 1.7rem;
-  margin:0px 4px;
+  margin: 0px 4px;
 
   display: flex;
   flex-direction: column;
@@ -201,25 +209,23 @@
 }
 
 .contactinput {
-  background-color: #FFD369;
+  background-color: #ffd369;
   font-family: "Montserrat";
 
   color: #393e46;
   margin: 10px;
   outline: none;
-  border:none;
-
+  border: none;
 
   border-radius: 10px;
   padding: 15px;
   font-size: 1.2rem;
 }
 .contactinput:focus {
-
   outline: none;
-  filter: drop-shadow(0px 5px 7px #FFD369);
+  filter: drop-shadow(0px 5px 7px #ffd369);
 }
-.contactbutton{
+.contactbutton {
   background-color: #393e46;
   color: #eeeeee;
   text-align: center;
@@ -232,6 +238,4 @@
 
   border-radius: 10px;
   font-size: 1.2rem;
-
-
 }

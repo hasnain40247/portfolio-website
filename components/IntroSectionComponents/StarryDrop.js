@@ -3,8 +3,10 @@ import { Suspense, useRef } from "react";
 import * as THREE from "three";
 
 import { CreateClouds } from "./3DAssets/Clouds";
-import Profile, { ProfileMesh } from "./3DAssets/Profile";
+import { ProfileMesh } from "./3DAssets/Profile";
 import Stars from "./3DAssets/Stars";
+import Loader from "./Loader";
+
 
 const StarryDrop = () => {
   const ref = useRef();
@@ -23,7 +25,7 @@ const StarryDrop = () => {
     >
       <Canvas camera={{ position: [0, 0, 36], fov: 75 }}>
         <ambientLight intensity={2} color={"#FEFBF6"} />
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loader />}>
           <Stars container={ref} />
           <CreateClouds />
           <ProfileMesh pref={pref} />
