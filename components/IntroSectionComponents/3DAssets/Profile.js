@@ -22,21 +22,4 @@ export const ProfileMesh = () => {
   );
 };
 
-const Profile = () => {
-  return (
-    <Canvas
-      style={{
-        position: "absolute",
-        width: "100%",
-        height: "100%",
-        zIndex: 100,
-      }}
-      camera={{ position: [0, 0, 36], fov: 75 }}
-    >
-      <Suspense fallback={null}>
-        <ProfileMesh />
-      </Suspense>
-    </Canvas>
-  );
-};
-export default Profile;
+

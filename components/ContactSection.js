@@ -39,6 +39,7 @@ const ContactSection = () => {
   return (
     <div className={styles.contactsection}>
       <div
+      className="contactcard"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -63,10 +64,12 @@ const ContactSection = () => {
 
         <form
         onSubmit={handleSubmit}
+        className="form"
           style={{
             display: "flex",
 
             flexDirection: "column",
+         
 
             borderRadius: "10px",
             padding: "10px",
@@ -74,6 +77,7 @@ const ContactSection = () => {
           }}
         >
           <div
+          className="formrow"
             style={{
               display: "flex",
               flexDirection: "row",
@@ -89,6 +93,9 @@ const ContactSection = () => {
               <input
                 name="from_name"
                 className={styles.contactinput}
+                style={{
+                  marginLeft:0
+                }}
                 placeholder="Name"
                 value={values.from_name}
                 onChange={handleChange}
@@ -96,6 +103,9 @@ const ContactSection = () => {
               <input
                 className={styles.contactinput}
                 name="email"
+                style={{
+                  marginLeft:0
+                }}
                 value={values.email}
                 placeholder="Email"
                 onChange={handleChange}
@@ -108,6 +118,7 @@ const ContactSection = () => {
               style={{
                 flex: 2,
                 resize: "none",
+                marginRight:"0"
               }}
               draggable={false}
               className={styles.contactinput}

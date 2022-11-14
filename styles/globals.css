@@ -179,11 +179,21 @@ body {
   font-family: "Montserrat";
   font-weight: bolder;
 }
-.profileimg, .scrollindicator, .hiddenicons {
+.profileimg,
+.scrollindicator,
+.hiddenicons {
   display: none;
 }
 
+.scrollindicator{
+  display: none;
+  visibility: hidden;
+}
 
+.gradient{
+  display: block;
+  visibility: visible;
+}
 
 @media only screen and (max-width: 1023px) {
   .timeline-item-content {
@@ -229,34 +239,46 @@ body {
   .titleDiv-h1 {
     font-size: 2.5rem !important;
   }
-  .scrollindicator{
-    
-      display: block;
-      position: absolute;
-      bottom: 10%;
-      color: #222831;
-    
+  .scrollindicator {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    color: #222831;
+    visibility: visible;
   }
 
-  .aboutitle{
+  .aboutitle {
     font-size: 2.5rem !important;
   }
-  .aboutcontent{
+  .aboutcontent {
     font-size: 0.8rem !important;
     line-height: 2 !important;
+    word-spacing: 3px;
   }
-  .gitabout{
+  .gitabout {
     font-size: 1.2rem !important;
-    top:5px !important
+    top: 5px !important;
   }
-.carosel{
-  justify-content: center;
-  padding: 10px;
-  margin-top: 2px !important;
+  .carosel {
+    justify-content: center;
+    padding: 10px;
+    margin-top: 2px !important;
+  }
+
+  .hiddenicons {
+    display: flex;
+  }
+  .formrow {
+    flex-direction: column !important;
+  }
+  .form {
+    justify-content: center;
+  }
+.contactcard{
+  width:90% !important
 }
-
-.hiddenicons{
-  display: flex
-
+.gradient{
+  display: none;
+  visibility: hidden;
 }
 }

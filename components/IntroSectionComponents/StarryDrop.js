@@ -3,7 +3,7 @@ import { Suspense, useRef } from "react";
 import * as THREE from "three";
 
 import { CreateClouds } from "./3DAssets/Clouds";
-import { ProfileMesh } from "./3DAssets/Profile";
+import { MoonMesh, ProfileMesh } from "./3DAssets/Profile";
 import Stars from "./3DAssets/Stars";
 import Loader from "./Loader";
 
