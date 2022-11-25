@@ -7,15 +7,15 @@ import ProfileImage from "./IntroSectionComponents/ProfileImage";
 const IntroSection = () => {
   return (
     <div className={styles.introduction}>
-      <StarryDrop />
-      <ProfileImage />
-      <div className="titleDiv">
+         <div className="titleDiv">
         <h1 className="titleDiv-h1">Hello,</h1>
         <h1 className="titleDiv-h1">I&apos;m Hasnain!</h1>
 
         <h1
           style={{
             color: "#222831",
+            zIndex:1,
+            position:"relative"
           }}
           className="titleDiv-h1"
         >
@@ -39,6 +39,9 @@ const IntroSection = () => {
           </span>
         </h1>
       </div>
+      <StarryDrop />
+      <ProfileImage />
+   
       <ScrollIndicator />
     </div>
   );

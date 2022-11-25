@@ -6,7 +6,6 @@ export const projects = [
     title: "Habit-y, Productivity App",
     tags: [
       { skill: "ReactJS", backcolor: skillcolors.react, color: "#EEEEEE" },
-      { skill: "ThreeJS", backcolor: skillcolors.three, color: "#EEEEEE" },
       {
         skill: "ElectronJS",
         backcolor: skillcolors.electron,
@@ -17,11 +16,10 @@ export const projects = [
     date: "Sept, 2022",
     link: "https://github.com/hasnain40247/habity-productivity-markdown-app",
     details: [
-      "Implemented Transfer learning using TensorFlow Model zoo.",
-
-      "Trained and fine-tuned a Single Shot Detector model using an independently created dataset consisting of sign language alphabets and phrases.",
-
-      "Implemented the model into a flask application primarily dependent on the in-browser OpenCV capability.",
+     "Created an Electron.JS based desktop application that takes markdown notes as well as tracks an individuals tasks and productivity.",
+     "The application uses React's Redux to handle both markdown and tasks and are stored in their respective formatted objects.",
+     "The markdown editor uses Slate.JS to give access to the textarea's DOM tree for more customizability which allows features like markdown text highlight, shortcuts, toolbar and more.",
+     "The app also takes advantage of custom animations using the framer motion library to give smooth and visually appealing animations."
     ],
   },
   {

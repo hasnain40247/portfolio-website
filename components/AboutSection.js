@@ -3,10 +3,12 @@ import { Canvas, useLoader, useThree, useFrame } from "@react-three/fiber";
 import styles from "../styles/Home.module.css";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import * as THREE from "three";
+import {FaPagelines} from "react-icons/fa"
 
 import Tag from "./AboutSectionComponents/Tag";
 import { Suspense } from "react";
 import SkillBubble from "./AboutSectionComponents/3DAssets/SkillBubble";
+import { AiFillProfile } from "react-icons/ai";
 
 const AboutSection = () => {
   return (
@@ -88,6 +90,24 @@ const AboutSection = () => {
             </a>
           </span>
         </p>
+        <a
+              target="_blank"
+              rel="noopener noreferrer"
+         href='https://drive.google.com/file/d/1ZQ2CxVqe5kKTUo9097_8b7Qe5d1OForB/view?usp=sharing'
+          style={{
+            cursor:"pointer",
+            textDecoration:"none",
+            display:"flex",
+            flexDirection:"row",
+            alignItems:"center",
+            justifyContent:"center"
+          }}
+          className={styles.contactbutton}>
+            <AiFillProfile style={{
+              marginRight:10
+            }}/>
+            <span>Send Message</span>
+          </a>
       </div>
     </div>
   );

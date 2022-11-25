@@ -3,7 +3,7 @@ const Gradient = () => {
     <div
       style={{
         width: "100%",
-        top: "95%",
+        top: "94%",
         zIndex: "1",
         height: "50px",
         backgroundImage: "linear-gradient(transparent,#EEEEEE 90%)",
