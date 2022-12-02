@@ -3,7 +3,7 @@ import { Canvas, useLoader, useThree, useFrame } from "@react-three/fiber";
 import styles from "../styles/Home.module.css";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import * as THREE from "three";
-import {FaPagelines} from "react-icons/fa"
+import { FaPagelines } from "react-icons/fa";
 
 import Tag from "./AboutSectionComponents/Tag";
 import { Suspense } from "react";
@@ -31,20 +31,19 @@ const AboutSection = () => {
 
       <div className={styles.container}>
         <h1
-        className="aboutitle"
+          className="aboutitle"
           style={{
             color: "#ffd369",
             margin: "0",
             fontWeight: "900",
-            fontSize:"3rem"
+            fontSize: "3rem",
           }}
         >
           Who am I?
         </h1>
 
         <p
-        className="aboutcontent"
-
+          className="aboutcontent"
           style={{
             lineHeight: 2,
             fontSize: "1.2rem",
@@ -74,12 +73,12 @@ const AboutSection = () => {
             <a
               href="https://github.com/hasnain40247"
               className={styles.gitlink}
-            target="_blank"
-            rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {""}
               <FaGithubAlt
-              className="gitabout"
+                className="gitabout"
                 style={{
                   fontSize: "2rem",
                   position: "relative",
@@ -91,23 +90,18 @@ const AboutSection = () => {
           </span>
         </p>
         <a
-              target="_blank"
-              rel="noopener noreferrer"
-         href='https://drive.google.com/file/d/1ZQ2CxVqe5kKTUo9097_8b7Qe5d1OForB/view?usp=sharing'
-          style={{
-            cursor:"pointer",
-            textDecoration:"none",
-            display:"flex",
-            flexDirection:"row",
-            alignItems:"center",
-            justifyContent:"center"
-          }}
-          className={styles.contactbutton}>
-            <AiFillProfile style={{
-              marginRight:10
-            }}/>
-            <span>Send Message</span>
-          </a>
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://drive.google.com/file/d/1ZQ2CxVqe5kKTUo9097_8b7Qe5d1OForB/view?usp=sharing"
+          className={styles.resumebutton}
+        >
+          <AiFillProfile
+            style={{
+              marginRight: 10,
+            }}
+          />
+          <span>View Resume</span>
+        </a>
       </div>
     </div>
   );

@@ -261,10 +261,28 @@
   font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 767px) {
-  .introduction{
-  height: 90vh;
+.resumebutton {
+  background-color: #393e46;
+  text-decoration: none;
+  color: #eeeeee;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-family: "Montserrat";
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 15px;
+
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .introduction {
+    height: 90vh;
   }
   .secondsection {
     padding: 10px;
@@ -324,7 +342,11 @@
     padding: 10px !important;
   }
 
-  .projectitle{
+  .projectitle {
     font-size: larger !important;
+  }
+
+  .resumebutton{
+    font-size: small !important;
   }
 }
