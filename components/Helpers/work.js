@@ -7,6 +7,37 @@ import { AiFillMobile } from "react-icons/ai";
 
 export const timelineData = [
   {
+    title: "Full-Stack Intern",
+    organization: "Wendor.in",
+    links:{
+      github:"wendor.in"
+    },
+    description: [
+      <span key={"1"}>
+        Worked on developing the company's dashboard using{" "}
+        <Tag skill="TypeScript" backcolor={skillcolors.typescript} /> ,
+        <Tag skill="React" backcolor={skillcolors.react} />,{" "}
+        <Tag skill="Nest.JS" backcolor={skillcolors.nest} />{" "}
+        <Tag skill="Next.JS" backcolor={skillcolors.next} />and{" "}
+        <Tag skill="PostGreSQL" backcolor={skillcolors.postgres} />
+      </span>,
+      <span key={"2"}>
+     Developed multiple features and live functions on the production website coupled with oppurutnities to delve deeper into the DevOps cycle.
+      </span>
+    ],
+    date: "Ongoing",
+    category: {
+      icon: (
+        <BsFillFileCodeFill
+          style={{
+            fontSize: "1.3rem",
+            color: "#FFD369",
+          }}
+        />
+      ),
+    },
+  },
+  {
     title: "Research Intern",
     organization: "VIT, Chennai",
     date: "Ongoing",

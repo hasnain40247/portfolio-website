@@ -26,5 +26,9 @@ export const skillcolors = {
     web3:"#f7931a",
     pennylane:"#ffbe0c",
     motoko:"#bc2e7e",
-    dfinity:"#2dace3"
+    dfinity:"#2dace3",
+    typescript:"#3074c4",
+    next:"#f4f4f4",
+    nest:"#dc244c",
+    postgres:"#34648c"
   };
