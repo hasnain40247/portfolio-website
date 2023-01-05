@@ -14,7 +14,7 @@ export const timelineData = [
     },
     description: [
       <span key={"1"}>
-        Worked on developing the company's dashboard using{" "}
+        Worked on developing the company&apos;s dashboard using{" "}
         <Tag skill="TypeScript" backcolor={skillcolors.typescript} /> ,
         <Tag skill="React" backcolor={skillcolors.react} />,{" "}
         <Tag skill="Nest.JS" backcolor={skillcolors.nest} />{" "}
