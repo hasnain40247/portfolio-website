@@ -15,11 +15,11 @@ export const timelineData = [
     description: [
       <span key={"1"}>
         Worked on developing the company&apos;s dashboard using{" "}
-        <Tag skill="TypeScript" backcolor={skillcolors.typescript} /> ,
-        <Tag skill="React" backcolor={skillcolors.react} />,{" "}
-        <Tag skill="Nest.JS" backcolor={skillcolors.nest} />{" "}
+        <Tag skill="TypeScript" backcolor={skillcolors.typescript} color="#eeeeee"/> ,
+        <Tag skill="React" backcolor={skillcolors.react} color="#eeeeee" />,{" "}
+        <Tag skill="Nest.JS" backcolor={skillcolors.nest} color="#eeeeee" />{" "}
         <Tag skill="Next.JS" backcolor={skillcolors.next} />and{" "}
-        <Tag skill="PostGreSQL" backcolor={skillcolors.postgres} />
+        <Tag skill="PostGreSQL" backcolor={skillcolors.postgres} color="#eeeeee" />
       </span>,
       <span key={"2"}>
      Developed multiple features and live functions on the production website coupled with oppurutnities to delve deeper into the DevOps cycle.
