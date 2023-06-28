@@ -53,10 +53,6 @@ const ContactSection = () => {
         }}
       >
         <h3
-          style={{
-            alignSelf: "flex-start",
-            msrgin: "10px",
-          }}
           className={styles.projectitle}
         >
           Get In Touch

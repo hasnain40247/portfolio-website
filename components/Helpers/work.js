@@ -9,23 +9,45 @@ export const timelineData = [
   {
     title: "Full-Stack Intern",
     organization: "Wendor.in",
-    links:{
-      github:"wendor.in"
+    links: {
+      github: "wendor.in"
     },
     description: [
       <span key={"1"}>
         Worked on developing the company&apos;s dashboard using{" "}
-        <Tag skill="TypeScript" backcolor={skillcolors.typescript} color="#eeeeee"/> ,
+        <Tag skill="TypeScript" backcolor={skillcolors.typescript} color="#eeeeee" /> ,
         <Tag skill="React" backcolor={skillcolors.react} color="#eeeeee" />,{" "}
         <Tag skill="Nest.JS" backcolor={skillcolors.nest} color="#eeeeee" />{" "}
         <Tag skill="Next.JS" backcolor={skillcolors.next} />and{" "}
         <Tag skill="PostGreSQL" backcolor={skillcolors.postgres} color="#eeeeee" />
       </span>,
       <span key={"2"}>
-     Developed multiple features and live functions on the production website coupled with oppurutnities to delve deeper into the DevOps cycle.
+
+        Implemented multiple features, improvements and bug-fixes on the company dashboard. This included, mood-boarding the UI, creating custom APIs, components and pushing them to production.</span>
+      , <span key={"3"}>
+        Involved in multiple meetings discussing and sharing alternative UI designs, additional features and implementation workflows.
+      </span>
+      , <span key={"4"}>
+
+        Performed a thorough component version-update of the company dashboard.
+      </span>,
+      <span key={"5"}>
+
+        Performed a complete rewrite of a preexisting NV9 payment module into TypeScript.
+      </span>,
+      <span key={"6"}>
+
+        Wrote extensive test-scripts for the company's Kiosk APIs on postman, integrate the tests with Newman and host them with Jenkins.
+      </span>
+      , <span key={"7"}>
+
+        Added critical functionalities to the Kiosk; Used MQTT to create and push features which were essential in enhancing accessibility and communication between the Dashboard and the Kiosk.
+      </span>,
+      <span key={"8"}>
+        Integrated AWS's SQS and SNS service to individually construct a fundamental event-based notification service hosted up on the dashboard and the kiosk.
       </span>
     ],
-    date: "Ongoing",
+    date: "Dec 2022 -June 2023",
     category: {
       icon: (
         <BsFillFileCodeFill
@@ -41,8 +63,8 @@ export const timelineData = [
     title: "Research Intern",
     organization: "VIT, Chennai",
     date: "Ongoing",
-    links:{
-      github:"blank"
+    links: {
+      github: "blank"
     },
     description: [
       <span key={"1"}>
@@ -55,6 +77,9 @@ export const timelineData = [
         Writing a paper comparing the efficiency of parallelism in image
         classification between QCNN, Quanvolutional network and traditional
         CNNs.
+      </span>,
+      <span key={"6"}>
+         Received AWS funding proposal acceptance from Ministry of Electronics and Information Technology (MeitY) Quantum Computing Applications Lab and credits to take a complete advantage of the Quantum computers offered by AWS Braket.
       </span>,
       <span key={"3"}>
         Used various quantum simulators and computers offered by AWS and
@@ -116,8 +141,8 @@ export const timelineData = [
   {
     title: "Software Developer Intern",
     organization: "Skybase IT",
-    links:{
-      github:"https://github.com/hasnain40247/gmap_vehicle_navigation"
+    links: {
+      github: "https://github.com/hasnain40247/gmap_vehicle_navigation"
     },
     description: [
       <span key={"1"}>
@@ -158,8 +183,8 @@ export const timelineData = [
   {
     title: "App Development Head",
     organization: "HackClub, VIT",
-    links:{
-      github:"https://github.com/HackclubVIT"
+    links: {
+      github: "https://github.com/HackclubVIT"
     },
     description: [
       <span key={"1"}>

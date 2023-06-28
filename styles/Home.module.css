@@ -280,10 +280,13 @@
   font-size: 1.2rem;
 }
 
+
+
 @media only screen and (max-width: 767px) {
   .introduction {
     height: 90vh;
   }
+ 
   .secondsection {
     padding: 10px;
     height: auto !important;
@@ -343,7 +346,7 @@
   }
 
   .projectitle {
-    font-size: larger !important;
+    font-size: 2rem !important;
   }
 
   .resumebutton{
