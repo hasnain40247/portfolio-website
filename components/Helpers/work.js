@@ -37,14 +37,14 @@ export const timelineData = [
       </span>,
       <span key={"6"}>
 
-        Wrote extensive test-scripts for the company's Kiosk APIs on postman, integrate the tests with Newman and host them with Jenkins.
+        Wrote extensive test-scripts for the company&apos;s Kiosk APIs on postman, integrate the tests with Newman and host them with Jenkins.
       </span>
       , <span key={"7"}>
 
         Added critical functionalities to the Kiosk; Used MQTT to create and push features which were essential in enhancing accessibility and communication between the Dashboard and the Kiosk.
       </span>,
       <span key={"8"}>
-        Integrated AWS's SQS and SNS service to individually construct a fundamental event-based notification service hosted up on the dashboard and the kiosk.
+        Integrated AWS&apos;s SQS and SNS service to individually construct a fundamental event-based notification service hosted up on the dashboard and the kiosk.
       </span>
     ],
     date: "Dec 2022 -June 2023",
