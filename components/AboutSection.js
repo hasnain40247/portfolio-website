@@ -92,7 +92,7 @@ const AboutSection = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://drive.google.com/file/d/1ZQ2CxVqe5kKTUo9097_8b7Qe5d1OForB/view?usp=sharing"
+          href="https://drive.google.com/file/d/1SEKANWUBwnGu8N2zyu5IZASijJGtc5sm/view?usp=sharing"
           className={styles.resumebutton}
         >
           <AiFillProfile
