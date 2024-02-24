@@ -31,9 +31,9 @@ const IntroSection = () => {
               loop
               cursor
               cursorStyle="_"
-              typeSpeed={70}
+              typeSpeed={90}
               deleteSpeed={100}
-              delaySpeed={1000}
+              delaySpeed={100}
               words={[" Learn.", " Code.", " Create."]}
             />
           </span>
