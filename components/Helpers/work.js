@@ -30,7 +30,7 @@ export const timelineData = [
     ],
     category: {
       icon: (
-        <RiFilePaper2Fill
+        <BsFillFileCodeFill
           style={{
             fontSize: "1.3rem",
             color: "#FFD369",
