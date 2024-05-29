@@ -7,6 +7,39 @@ import { AiFillMobile } from "react-icons/ai";
 
 export const timelineData = [
   {
+    title: "Undergraduate Teaching Assistant",
+    organization: "Northeastern University, Boston",
+    date: "Ongoing",
+    links: {
+      github: "blank"
+    },
+    description: [
+      <span key={"1"}>
+        Developed several autograder scripts with test-suites for various assignments using{" "}
+        <Tag skill={"Python"} backcolor={skillcolors.python} /> and{" "}
+      </span>,
+      <span key={"2"}>
+        Curated lecture notes with detailed walkthroughs of algorithms and topics in AI including {" "}  <Tag skill={"Advasarial ML"} backcolor={skillcolors.python} /> and {" "}  <Tag skill={"Deep Learning"} backcolor={skillcolors.python} />
+      </span>,
+      <span key={"6"}>
+        Designed comprehensive homework and lab assignments to reinforce NLP concepts like <Tag skill={"LSTM"} backcolor={skillcolors.python} /> and {" "}  <Tag skill={"Sparse Vectors"} backcolor={skillcolors.python} />
+      </span>,
+      <span key={"3"}>
+      Aided students with conceptual doubts and technical coursework.
+      </span>,
+    ],
+    category: {
+      icon: (
+        <RiFilePaper2Fill
+          style={{
+            fontSize: "1.3rem",
+            color: "#FFD369",
+          }}
+        />
+      ),
+    },
+  },
+  {
     title: "Full-Stack Intern",
     organization: "Wendor.in",
     links: {

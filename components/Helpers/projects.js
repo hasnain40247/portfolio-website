@@ -3,7 +3,7 @@ import { skillcolors } from "../Helpers/skillColors";
 
 export const projects = [
   {
-    title: "Habit-y, Productivity App",
+    title: "Shroom: LLM Hallucination Detector",
     tags: [
       { skill: "Python", backcolor: skillcolors.react, color: "#EEEEEE" },
       {
@@ -27,7 +27,7 @@ export const projects = [
         color: "#393E46",
       },
     ],
-    url: "https://imgur.com/a/3amWHQG",
+    url: "https://imgur.com/a/N26oG56",
     date: "March, 2024",
     link: "https://github.com/hasnain40247/SHROOM-llm-hallucination-detector",
     details: [
