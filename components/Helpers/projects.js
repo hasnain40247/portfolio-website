@@ -38,7 +38,7 @@ export const projects = [
     ],
   },
   {
-    title: "Shaper: GA-based Projectile Evader,
+    title: "Shaper: GA-based Projectile Evader",
     tags: [
       { skill: "Python", backcolor: skillcolors.react, color: "#EEEEEE" },
       { skill: "Pygame", backcolor: skillcolors.react, color: "#EEEEEE" },
