@@ -5,11 +5,11 @@ export const projects = [
   {
     title: "Shroom: LLM Hallucination Detector",
     tags: [
-      { skill: "Python", backcolor: skillcolors.python, color: "#EEEEEE" },
+      { skill: "Python", backcolor: skillcolors.python},
       {
         skill: "Pytorch",
         backcolor: skillcolors.pytorch,
-        color: "#393E46",
+        color: "#EEEEEE" 
       },
       {
         skill: "Transformers",
