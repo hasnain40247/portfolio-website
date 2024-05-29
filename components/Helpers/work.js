@@ -19,10 +19,10 @@ export const timelineData = [
         <Tag skill={"Python"} backcolor={skillcolors.python} /> and{" "}
       </span>,
       <span key={"2"}>
-        Curated lecture notes with detailed walkthroughs of algorithms and topics in AI including {" "}  <Tag skill={"Advasarial ML"} backcolor={skillcolors.python} /> and {" "}  <Tag skill={"Deep Learning"} backcolor={skillcolors.python} />
+        Curated lecture notes with detailed walkthroughs of algorithms and topics in AI including {" "}  <Tag skill={"Advasarial ML"} backcolor={skillcolors.adv} /> and {" "}  <Tag skill={"Deep Learning"} backcolor={skillcolors.dl} />
       </span>,
       <span key={"6"}>
-        Designed comprehensive homework and lab assignments to reinforce NLP concepts like <Tag skill={"LSTM"} backcolor={skillcolors.python} /> and {" "}  <Tag skill={"Sparse Vectors"} backcolor={skillcolors.python} />
+        Designed comprehensive homework and lab assignments to reinforce NLP concepts like <Tag skill={"LSTM"} backcolor={skillcolors.lstm} /> and {" "}  <Tag skill={"Sparse Vectors"} backcolor={skillcolors.vector} />
       </span>,
       <span key={"3"}>
       Aided students with conceptual doubts and technical coursework.

@@ -5,25 +5,25 @@ export const projects = [
   {
     title: "Shroom: LLM Hallucination Detector",
     tags: [
-      { skill: "Python", backcolor: skillcolors.react, color: "#EEEEEE" },
+      { skill: "Python", backcolor: skillcolors.python, color: "#EEEEEE" },
       {
         skill: "Pytorch",
-        backcolor: skillcolors.electron,
+        backcolor: skillcolors.pytorch,
         color: "#393E46",
       },
       {
         skill: "Transformers",
-        backcolor: skillcolors.electron,
+        backcolor: skillcolors.trans,
         color: "#393E46",
       },
       {
         skill: "Bert",
-        backcolor: skillcolors.electron,
+        backcolor: skillcolors.bert,
         color: "#393E46",
       },
       {
         skill: "HuggingFace",
-        backcolor: skillcolors.electron,
+        backcolor: skillcolors.hf,
         color: "#393E46",
       },
     ],
@@ -40,10 +40,10 @@ export const projects = [
   {
     title: "Shaper: GA-based Projectile Evader",
     tags: [
-      { skill: "Python", backcolor: skillcolors.react, color: "#EEEEEE" },
-      { skill: "Pygame", backcolor: skillcolors.react, color: "#EEEEEE" },
-      { skill: "Pymunk", backcolor: skillcolors.react, color: "#EEEEEE" },
-      { skill: "Numpy", backcolor: skillcolors.react, color: "#EEEEEE" },
+      { skill: "Python", backcolor: skillcolors.python, color: "#EEEEEE" },
+      { skill: "Pygame", backcolor: skillcolors.pygame, color: "#EEEEEE" },
+      { skill: "Pymunk", backcolor: skillcolors.pymunk, color: "#EEEEEE" },
+      { skill: "Numpy", backcolor: skillcolors.vector, color: "#EEEEEE" },
    
     ],
     url: "https://imgur.com/a/bBktJc8",

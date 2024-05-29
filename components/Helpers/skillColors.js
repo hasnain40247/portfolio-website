@@ -30,5 +30,17 @@ export const skillcolors = {
     typescript:"#3074c4",
     next:"#f4f4f4",
     nest:"#dc244c",
-    postgres:"#34648c"
+    postgres:"#34648c",
+    lstm:"#FDA403",
+    vector:"#006769",
+    adv:"#808836",
+    dl:"#FFBF00",
+    pygame:"#c1fd20",
+    pymunk:"#FA7070",
+   pytorch:"#ee4c2c",
+trans:"#ffe2bb",
+bert:"#f6ec5c",
+hf:"#FEB941",
+
+
   };
