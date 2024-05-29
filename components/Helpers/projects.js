@@ -5,6 +5,60 @@ export const projects = [
   {
     title: "Habit-y, Productivity App",
     tags: [
+      { skill: "Python", backcolor: skillcolors.react, color: "#EEEEEE" },
+      {
+        skill: "Pytorch",
+        backcolor: skillcolors.electron,
+        color: "#393E46",
+      },
+      {
+        skill: "Transformers",
+        backcolor: skillcolors.electron,
+        color: "#393E46",
+      },
+      {
+        skill: "Bert",
+        backcolor: skillcolors.electron,
+        color: "#393E46",
+      },
+      {
+        skill: "HuggingFace",
+        backcolor: skillcolors.electron,
+        color: "#393E46",
+      },
+    ],
+    url: "https://imgur.com/a/3amWHQG",
+    date: "March, 2024",
+    link: "https://github.com/hasnain40247/SHROOM-llm-hallucination-detector",
+    details: [
+     "Developed classifiers for hallucinated text using spectral, hierarchical clustering, and semantic similarity metrics.",
+     "Designed and evaluated a variety of metric-based feature vector to cluster pairs of text into their true classes.",
+     "Implemented a BERT-based Siamese network, achieving a loss of 0.02 across machine translation generations.",
+     "Developed a self-eval prompting agent to utilize conistency prompting over a training set to learn and detect hallucinations.",
+    ],
+  },
+  {
+    title: "Shaper: GA-based Projectile Evader,
+    tags: [
+      { skill: "Python", backcolor: skillcolors.react, color: "#EEEEEE" },
+      { skill: "Pygame", backcolor: skillcolors.react, color: "#EEEEEE" },
+      { skill: "Pymunk", backcolor: skillcolors.react, color: "#EEEEEE" },
+      { skill: "Numpy", backcolor: skillcolors.react, color: "#EEEEEE" },
+   
+    ],
+    url: "https://imgur.com/a/bBktJc8",
+    date: "Dec, 2023",
+    link: "https://github.com/hasnain40247/SHAPER",
+    details: [
+      "Trained neural networks by replacing back-propagation with genetic algorithm and a variable scoring function.",
+      "Developed a system of unique agents with independent neural networks, achieving fitness over 7,200 frames.",
+      "Mutated agent populations, enhancing performance by iteratively selecting top-scoring spatial properties."
+    ]
+
+  },
+  {
+    title: "Habit-y, Productivity App",
+    tags: [
       { skill: "ReactJS", backcolor: skillcolors.react, color: "#EEEEEE" },
       {
         skill: "ElectronJS",
