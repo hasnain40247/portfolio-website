@@ -27,7 +27,7 @@ export const projects = [
         color: "#393E46",
       },
     ],
-    url: "https://imgur.com/a/N26oG56",
+    url: "https://i.imgur.com/8VKltwM.png",
     date: "March, 2024",
     link: "https://github.com/hasnain40247/SHROOM-llm-hallucination-detector",
     details: [
@@ -46,7 +46,7 @@ export const projects = [
       { skill: "Numpy", backcolor: skillcolors.vector, color: "#EEEEEE" },
    
     ],
-    url: "https://imgur.com/a/bBktJc8",
+    url: "https://i.imgur.com/1A1ZcGj.png",
     date: "Dec, 2023",
     link: "https://github.com/hasnain40247/SHAPER",
     details: [
